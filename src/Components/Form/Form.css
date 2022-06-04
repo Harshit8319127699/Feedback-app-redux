@@ -1,0 +1,25 @@
+.container1{
+    width:inherit;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formholder{
+    width:20vw;
+    height:46vh;
+    background-color: rgb(143, 137, 137);
+    display: flex;
+    justify-content: center;
+}
+.formholder input{
+    margin-top: 2vmax;
+    outline: none;
+    padding: 0.4vmax;
+    border-radius: 0.3vmax;
+    font-family: gilroy;
+
+}
+.formholder form button{
+    margin-top: 2vmax;
+}

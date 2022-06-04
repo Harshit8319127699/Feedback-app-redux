@@ -1,0 +1,38 @@
+.container2{
+    width: inherit;
+    height:90vh;
+    padding: 3vmax;
+    display: flex ;   
+}
+.feedbackcard{
+    width: 16vw;
+    height: 32vh;
+    background-color: #ffff;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 1vmax;
+    margin-left: 1vmax;
+    flex-wrap: nowrap;
+}
+.head{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head h3{
+    font-weight: 400;
+    font-family: gilroy;
+}
+.details {
+    width: inherit;
+    height: inherit;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details p{
+    margin-top: 1vmax;
+}
+.details i{
+    margin-top: 0.4vmax;
+}
