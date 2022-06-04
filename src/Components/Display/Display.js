@@ -8,9 +8,10 @@ function Display() {
 const dispatch=useDispatch()
 const state=useSelector(state=>state.feedback.feedback)
 console.log(state);
-const deletehandler=(elem)=>{
-var a={...state[elem.target.id]}
-dispatch(deleteFeedback(a))
+const deletehandler=(e)=>{
+const arr=[...state]
+arr.splice(e.target.id,1)
+dispatch(deleteFeedback(arr))
 }
 
 const hold=state.map((elem,index)=>{
@@ -23,6 +24,7 @@ const hold=state.map((elem,index)=>{
     <p>Contact:{elem.contact}</p>
     <p>email: {elem.email}</p>
     <p>Feedback: {elem.Feedback}</p>
+  <i class="ri-delete-bin-7-fill" id={index} onClick={deletehandler}></i>
   </div>
 </div>
 })
