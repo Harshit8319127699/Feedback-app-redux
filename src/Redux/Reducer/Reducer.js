@@ -13,7 +13,7 @@ const feedbackReducer = (state = initialState, action) => {
         console.log("its working");    
         return {
                 ...state,
-                feedback: state.feedback.filter(feedback => feedback !== action.payload?feedback.feedback:null)
+                feedback:action.payload
             };
         default:
             return state;
